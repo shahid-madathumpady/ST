@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login - Status Document Clearing LLC</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <div class="login-card">
+      <img src="logo.png" alt="Company Logo" class="login-logo">
+      <h2 class="login-company-name">Status Document Clearing LLC</h2>
+      <p class="login-tagline">Your partner in professional services.</p>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="auth.js"></script>
+  <script>
+    // Your firebaseConfig from script.js
+    const firebaseConfig = {
+      apiKey: "AIzaSyDy1TlWuSoswdrqsn2l0ge0lP19HjumsyY",
+      authDomain: "status-document-clearing-d7d12.firebaseapp.com",
+      projectId: "status-document-clearing-d7d12",
+      storageBucket: "status-document-clearing-d7d12.firebasestorage.app",
+      messagingSenderId: "993127284533",
+      appId: "1:993127284533:web:3bf8576d5ffbbb6ee4167c",
+      measurementId: "G-Y08FG397TM"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>
